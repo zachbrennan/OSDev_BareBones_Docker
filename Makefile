@@ -17,6 +17,9 @@ OUTLOC := bin
 SRC := src
 
 #---------------------------------------------------------------
+.PHONY : run image build buildISO clean buildAndRun
+
+buildAndRun: build buildISO run
 
 run:
 	qemu-system-i386 -cdrom myos.iso
