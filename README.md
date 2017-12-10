@@ -33,10 +33,10 @@ will use the compiled files in the *bin* directory to create a bootable *.iso* o
 
 ### Running the ISO
 
-This part doesn't use Docker, or the Makefile! Make sure that you have QEMU installed, and you should be able to boot the
-OS in a virtual window with the 
+This part doesn't use Docker! Yet! Make sure that you have QEMU installed on the machine you are running this on
+, and you should be able to boot the OS in a virtual window with the 
 ```
-qemu-system-i386 -cdrom myos.iso
+make run
 ```
 command. If QEMU is not installed, you should be able to install it with:
 
