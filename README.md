@@ -9,6 +9,10 @@ than [compiling "Hello World" in C](https://github.com/zachbrennan/basicDockerCo
 
 ### Building the Image
 
+*This section assumes Docker is installed. If it is not, follow
+the instructions 
+[HERE](https://docs.docker.com/engine/installation/)*
+
 ```
 make image
 ```
@@ -51,6 +55,20 @@ command. If QEMU is not installed, you should be able to install it with:
 * RHEL/CentOS: ```yum install qemu-kvm```
 
 * SUSE: ```zypper install qemu```
+
+### An Easier Way
+
+I got annoyed at having to type ```make build``` ```make buildISO``` ```make run```
+every time I wanted to test a change, so I made the default *make* command call
+all of those, in order. So now if you want to build and run it, all you have to
+do is call ```make```.
+
+### Editted Files
+
+Although this was built to run the Bare Bones Tutorial code, I have been, and will
+continue to, edit the given code. If you want to run the original tutorial code,
+you can simply replace the contents of the *src* directory with the 3 original
+files that can be found [on the tutorial page](http://wiki.osdev.org/Bare_Bones).
 
 ### Cleanup
 
