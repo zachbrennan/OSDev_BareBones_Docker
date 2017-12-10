@@ -31,10 +31,6 @@ RUN wget https://ftp.gnu.org/gnu/binutils/binutils-2.29.1.tar.gz
 RUN tar -xf binutils-2.29.1.tar.gz
 RUN tar -xf gcc-7.2.0.tar.gz
 
-# RUN export PREFIX="$HOME/opt/cross"
-# RUN export TARGET=i686-elf
-# RUN export PATH="$PREFIX/bin:$PATH"
-
 ENV PREFIX="$HOME/opt/cross"
 ENV TARGET=i686-elf
 ENV PATH="$PREFIX/bin:$PATH"
